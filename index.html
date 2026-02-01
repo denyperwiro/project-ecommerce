@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>HP Clone Header Full Image</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+
+
+/* HERO FULL IMAGE */
+.hero{
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* SLIDE BUTTONS */
+.slide-btn{
+    position:absolute;
+    top:50%;
+    background:transparent;
+    border:transparent;
+    color:transparent;
+    font-size:18px;
+    width:100px;
+    height:100px;
+    cursor:pointer;
+    z-index:10;
+}
+.slide-btn:hover{
+    background:transparent;
+}
+
+.slide-left{
+    left:20px;
+}
+.slide-right{
+    right:20px;
+}
+
+/* CONTENT */
+.content{
+    padding:40px 0;
+}
+
+/* LINE FULL WIDTH */
+.line{
+    width:100%;
+    height:2px;
+    background:#000;
+    margin:10px 0 15px 0;
+}
+
+/* BIG CARDS */
+.cards img{
+    height:260px;
+    object-fit:cover;
+}
+.card{
+    transition:0.3s;
+}
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+.card-title{
+    background:#000;
+    color:#fff;
+    padding:16px;
+    font-size:16px;
+}
+
+
+        .nav2{
+          height: 50px;
+          padding-right:20px;
+          width: 60px;
+        }
+ 
+       .navbar {
+            font-size: 1.25rem;
+            padding: 1rem; 
+        }
+        .navbar img {
+            height: 70px;
+            width: auto;
+        }
+        .btn-link {
+            font-size: 1.25rem;
+        }
+        .form-control {
+            font-size: 1.25rem;
+            height: 50px;
+            width: 500px;
+        
+        }
+        .btn-outline-secondary {
+            font-size: 1.25rem;
+            padding: 10px 15px;
+        }
+
+        
+
+        .troli {
+        
+            font-size: 30px;
+            color: black; 
+            margin-top: 2,5px;
+
+            
+        }
+
+         .nav-background{
+      background-color: #b22222;
+      height:90px ;
+      text-align: center ;
+      justify-content: center;
+      padding: 0 20px ;
+      padding-top: 15px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid black;
+
+      
+    }
+
+    .nav-text{
+      color: white;
+      font-weight: normal;
+      font-size: 30px;
+     
+      
+    }
+
+    .nav-span{
+      color: white;
+      font-size: 20px;
+      letter-spacing: 0px;
+    }
+
+
+     /* 2 */
+
+        .nav2{
+          height: 50px;
+          width: 60px;
+        }
+ 
+        .btn-link {
+            font-size: 1.25rem;
+        }
+        .form-control {
+            font-size: 1.25rem;
+            height: 50px;
+            width: 500px;
+        
+        }
+        .btn-outline-secondary {
+            font-size: 1.25rem;
+            padding: 10px 15px;
+        }
+
+        .troli {
+        
+            font-size: 30px;
+            color: black; 
+            margin-top: 2,5px;
+
+            
+        }
+
+        /* Top Banner */
+    .top-banner {
+      background-color: #a70b4e; /* Warna merah seperti di gambar */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+    .top-banner .left {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .top-banner .center {
+      flex: 1;
+      margin: 5px 20px;
+      font-size: 14px;
+    }
+
+    .top-banner .center b {
+      font-weight: bold;
+    }
+
+    .top-banner .shop-button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 8px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Bottom Navigation */
+    .nav-bar {
+      background-color: #ffffff;
+      color: #000;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px;
+      font-size: 14px;
+      gap: 25px;
+      flex-wrap: wrap;
+      border-top: 1px solid #ddd;
+    }
+
+    .nav-bar span {
+      font-weight: bold;
+    }
+
+    .nav-bar a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
+
+
+     .title-client{
+      text-align: center;
+      font-weight: normal;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    .bg-title-header{
+      background-color: white;
+      
+
+    }
+
+    .title-header{
+      color:black;
+      font-weight: normal;
+      font-size: 16px;
+      padding-right:30px ;
+      padding-left:30px ;
+      padding-bottom:2px ;
+      padding-top:13px ;
+
+    }
+
+
+
+
+
+     /* Mengatur style untuk seluruh footer */
+    .top-footer {
+      background-color: #f5f5f5; /* Warna abu-abu muda */
+      padding: 20px ; /* Padding atas dan bawah */
+      display: flex; /* Mengatur agar isi footer bisa disusun horizontal */
+      justify-content: center; /* Menengahkan isi secara horizontal */
+      gap: 40px; /* Jarak antar item */
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+       margin-top: 120px;
+    }
+
+    .top-footer-item a{
+        color: black;
+        text-decoration: underline;
+    }
+
+    
+   /* Container utama footer */
+    footer {
+      background-color: #000; /* Latar footer tetap hitam */
+      padding: 40px; /* Ruang di dalam footer */
+      border-top: 1px solid #444; /* Garis pemisah di atas footer */
+      
+    }
+
+    /* Atur tata letak kolom footer */
+    .footer-container {
+      display: flex; /* Gunakan flexbox untuk baris kolom */
+      flex-wrap: wrap; /* Kolom bisa turun ke bawah jika layar kecil */
+      justify-content: space-between; /* Jarak antar kolom */
+      max-width: 1200px;
+      margin: auto; /* Pusatkan footer di halaman */
+    }
+
+    /* Gaya untuk masing-masing kolom */
+    .footer-column {
+      flex: 1 1 180px; /* Responsif: 1 bagian, minimal 180px */
+      margin: 10px;
+    }
+
+    /* Judul kolom (About Us, Support, dll) */
+    .footer-column h4 {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Link di dalam footer */
+    .footer-column a {
+      display: block;
+      color: #ccc; /* Abu-abu muda */
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 14px;
+      
+    }
+
+
+    /* Bagian bawah footer (copyright + links hukum) */
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: #aaa;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+
+    /* Baris link legal (privacy, terms, dll) */
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    /* Link individual pada bagian bawah */
+    .footer-links a {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+
+
+</style>
+</head>
+
+<body>
+
+
+   <!-- Top Banner -->
+  <div class="top-banner">
+    <div class="left">Memorial Day Sale</div>
+    <div class="center">
+      <b>Save up to 58%</b> on select HP tech, <b>FREE shipping</b>, <b>24 months special financing</b> on purchases of $1,500 or more with the HP Credit Account.<sup>+</sup>
+    </div>
+    <button class="shop-button">SHOP</button>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="nav-bar">
+    <span>EXPERT SALES HELP:</span> <a href="tel:+18664298383">+1 (866)-429-8383</a>
+    <a href="#">ORDER STATUS</a>
+    <a href="#">CUSTOMER SERVICE</a>
+    <a href="#">DISCOUNT PROGRAMS ▼</a>
+    <a href="#">HP FINANCING</a>
+    <a href="#">SIGN IN/REGISTER ▼</a>
+  </div>
+
+
+    <!-- navigation bar/bawah -->
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid d-flex">
+            <img src="./logo-hp.png"  class="nav2" >
+            <ul class="navbar-nav d-flex flex-row me-auto">
+                <button type="button" class="btn btn-link text-dark" data-bs-toggle="modal" data-bs-target="#menuModal">Support</button>
+                <button type="button" class="btn btn-link text-dark" data-bs-toggle="modal" data-bs-target="#menuModal">Explore</button>
+                <button type="button" class="btn btn-link text-dark" data-bs-toggle="modal" data-bs-target="#menuModal">Shop</button>
+            </ul>
+
+            <!-- tabel penacarian -->
+            <div class="d-flex">
+                <form class="d-flex me-2" style="margin-right: auto;">
+                    <input class="form-control me-2 text-secondary border border-secondary rounded" type="search" placeholder="What Are You Looking for?" aria-label="Search">
+                </form>
+
+            <!-- icon troli -->
+                <div class="troli"> 
+                    <i class="bi bi-cart icon"></i> 
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    
+    <!-- sistem modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                  
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Support</h6>
+                            <ul>
+                                <li><a href="index.html">Home </a></li>
+                                <li><a href="diagnostic_tools.html"> Diagnostic Tools </a></li>
+                                <li><a href="business_desktops.html"> Business Desktops </a></li>
+                                <li><a href="financing.html">Financing</a></li>
+                                <li><a href="client.html">HP client </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Explore</h6>
+                            <ul>
+                                 <li><a href="more_about.html">More About</a></li>
+                                 <li><a href="privacy_choices.html">Privacy Choices</a></li>
+                                 <li><a href="site_disclaimers.html">Site Disclaimers </a></li>
+                                  <li><a href="profil-bye-deny.html">Profile</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Shop</h6>
+                            <ul>
+                                 
+                               
+                               <li><a href="printers-issues.html">Printers Issues</a></li> 
+                                 <li><a href="smb-servers.html"> Small Business Servers </a></li>
+                                 <li><a href="terms-of-use.html"> Terms Of Use </a></li>
+                                 <li><a href="zworkstations.html"> Zworkstations </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<!-- HERO FULL IMAGE -->
+<div id="slider" class="hero mt-5">
+
+  <button class="slide-btn slide-left" onclick="prevSlide()">&#8592;</button>
+  <button class="slide-btn slide-right" onclick="nextSlide()">&#8594;</button>
+
+  <img id="hero-img" src="header (1).png">
+  <img id="hero-img" src="header (3).png">
+  <img id="hero-img" src="Screenshot (10).png">
+
+</div>
+
+<!-- CONTENT -->
+<div class="container content text-start">
+  <h2>Halo!</h2>
+
+  <div class="line"></div>
+
+  <p>Bagaimana kami bisa membantu Anda hari ini?</p>
+
+  <div class="row justify-content-center cards g-5 mt-4">
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./1.png" class="card-img-top">
+        <div class="card-title">Printer</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./2.png" class="card-img-top">
+        <div class="card-title">PC</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="./3.png" class="card-img-top">
+        <div class="card-title">Monitors and Accessories</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    
+    <!-- Kolom 1: About Us -->
+    <div class="footer-column">
+      <h4 >ABOUT US</h4>
+    
+      <a href="#">Contact HP</a>
+      <a href="#">Careers</a>
+      <a href="#">Investor relations</a>
+      <a href="#">Sustainable impact</a>
+      <a href="#">Diversity, Equity and Inclusion</a>
+      <a href="#">Newsroom</a>
+      <a href="#">Tech Takes</a>
+      <a href="#">HP Store Newsletter</a>
+      <a href="#">HP Printables Newsletter</a>
+    </div>
+
+    <!-- Kolom 2: Cara Membeli -->
+    <div class="footer-column">
+      <h4 >WAYS TO BUY</h4>
+      <a href="#">Shop online</a>
+      <a href="#">Call an HP rep</a>
+      <a href="#">Find a reseller</a>
+      <a href="#">Enterprise store</a>
+      <a href="#">Public sector purchasing</a>
+    </div>
+
+    <!-- Kolom 3: Dukungan -->
+    <div class="footer-column">
+      <h4 >SUPPORT</h4>
+      <a href="#">Download drivers</a>
+      <a href="#">Support & troubleshooting</a>
+      <a href="#">Community</a>
+      <a href="#">Register your product</a>
+      <a href="#">Authorized service providers</a>
+      <a href="#">Check repair status</a>
+      <a href="#">Fraud alert</a>
+      <a href="#">Security Center</a>
+    </div>
+
+    <!-- Kolom 4: Mitra HP -->
+    <div class="footer-column">
+      <h4 >HP PARTNERS</h4>
+      <a href="#">HP Amplify Partner Program</a>
+      <a href="#">HP Partner Portal</a>
+      <a href="#">Developers</a>
+    </div>
+
+
+ 
+  <div class="footer-bottom">
+    <!-- Kumpulan link legal -->
+    <div class="footer-links">
+      <a href="#">Recalls</a>
+      <a href="#">Product recycling</a>
+      <a href="#">Accessibility</a>
+      <a href="#">CA Supply Chains Act</a>
+      <a href="#">Privacy</a>
+      <a href="#">Use of cookies</a>
+      <a href="#">Your privacy choices</a>
+      <a href="#">Terms of use</a>
+      <a href="#">Limited warranty statement</a>
+      <a href="#">Terms & conditions of sales & service</a>
+    </div>
+    
+    <p>©2025 HP Development Company, L.P. The information contained herein is subject to change without notice.</p>
+  </div>
+</footer>
+
+<script>
+let slides = [
+  "header (1).png",
+  "header (3).png",
+  "Screenshot (10).png"
+];
+
+let index=0;
+let img=document.getElementById("hero-img");
+
+function showSlide(){
+  img.src = slides[index];
+}
+
+function nextSlide(){
+  index=(index+1)%slides.length;
+  showSlide();
+}
+
+function prevSlide(){
+  index=(index-1+slides.length)%slides.length;
+  showSlide();
+}
+
+setInterval(nextSlide,4000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
